@@ -48,7 +48,7 @@ This dataset can be used for:
 ### **Installation**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/repository-name.git
+   git clone https://github.com/fa.rahimzadeh/proteinGeometry.git
    ```
 2. Ensure you have the required dependencies installed:
    ```bash
