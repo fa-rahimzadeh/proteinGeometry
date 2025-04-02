@@ -4,7 +4,7 @@ This repository contains Python scripts for computing and analyzing geometric fe
 
 ## Contents  
 
-- **`geometryCalc.py`** – Computes dihedral angles (ϕ, ψ, ω) and distance maps from protein structures.  
+- **`geometryCalc.py`** – Computes dihedral angles (ϕ, ψ, ω) (1D) and distance maps (2D) from protein structures.  
 - **`RamachandranPlot.py`** – Generates Ramachandran plots to visualize backbone torsion angles.  
 - **`ReadProteinData.py`** – Loads and retrieves precomputed geometry data for a given Protein ID.
 
