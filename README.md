@@ -19,17 +19,17 @@ pip install numpy matplotlib pdbecif numba psutil
 
 The dataset is available on Zenodo: [https://zenodo.org/uploads/14880546]
 
-Each .npz file is named as {protein_id}_geometry.npz, where {protein_id} is the corresponding PDB or SCOPe identifier. Each file contains:
+Each **`.npz`** file is named as **`{protein_id}_geometry.npz`**, where **`{protein_id}`** is the corresponding PDB or SCOPe identifier. Each file contains:
 
-dist_matrix – Pairwise residue Cβ-Cβ (or Cα for Glycine) distances.
+**`dist_matrix`** – Pairwise residue Cβ-Cβ (or Cα for Glycine) distances.
 
-phi_vector, psi_vector, omega_vector – Backbone dihedral angles (ϕ, ψ, ω).
+**`phi_vector`**, **`psi_vector`**, **`omega_vector`** – Backbone dihedral angles (ϕ, ψ, ω).
 
-start_index, end_index – Indices defining structured regions.
+**`start_index`**, **`end_index`** – Indices defining structured regions.
 
-resolution_classification – Classification based on structure resolution.
+**`resolution_classification`** – Classification based on structure resolution.
 
-mask – A mask indicating missing or unreliable data.
+**`mask`** – A mask indicating missing or unreliable data.
 ## Usage  
 
 ### 1. Compute Dihedral Angles and Distance Maps  
