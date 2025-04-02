@@ -33,17 +33,33 @@ Each **`.npz`** file is named as **`{protein_id}_geometry.npz`**, where **`{prot
 ## Usage  
 
 ### 1. Compute Dihedral Angles and Distance Maps  
-Run `geometryCalc.py` with a protein structure file (e.g., PDB format):  
+First define the Input and Output Directories
+
+Input Directory: Contains **`.cif`** files
+
+Output Directory: Stores **`.npz`** geometry files
+
+Modify these paths in **`geometryCalc.py`**:
 
 ```bash
-python geometryCalc.py --input_dir path/to/cif_files --output_dir path/to/output
+input_directory = 'path/to/input_cifs/'  
+output_directory = 'path/to/output_geometry/'
+```
+
+Then, use the following command to process all **`.cif`** files in the input directory:
+
+```bash
+python geometryCalc.py 
 ```  
 
 ### 2. Generate a Ramachandran Plot  
-Use `RamachandranPlot.py` to visualize backbone torsion angles:  
+First define the Input Geometry Files Directory
+Input directory: Contains**`.npz`** geometry files
+
+Then, use `RamachandranPlot.py` to visualize backbone torsion angles:  
 
 ```bash-
-python RamachandranPlot.py --data path/to/generated_geometry_files
+python RamachandranPlot.py 
 ```  
 
 ### 3. Reading Protein Geometry Data
