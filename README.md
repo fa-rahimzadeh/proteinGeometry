@@ -21,9 +21,9 @@ pip install numpy matplotlib pdbecif numba psutil
 ### 1. Compute Dihedral Angles and Distance Maps  
 First define the Input and Output Directories
 
-- # Input Directory: Contains **`.cif`** files
+- #### Input Directory: Contains **`.cif`** files
 
-- # Output Directory: Stores **`.npz`** geometry files
+- #### Output Directory: Stores **`.npz`** geometry files
 
 Modify these paths in **`geometryCalc.py`**:
 
