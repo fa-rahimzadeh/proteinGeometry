@@ -47,7 +47,8 @@ python RamachandranPlot.py --data path/to/generated_geometry_files
 ```  
 
 ### 3. Reading Protein Geometry Data
-Use ReadProteinData.py to load and inspect a protein's geometry according to its related protein_id
+Use ReadProteinData.py to load and inspect a protein's geometry according to its related protein_id as bellow
+
 
 ```bash
 from ReadProteinData import load_protein_data
