@@ -15,29 +15,15 @@ To run these scripts, ensure you have Python installed along with the required d
 ```bash
 pip install numpy matplotlib pdbecif numba psutil
 ```  
-## Dataset
 
-The dataset is available on Zenodo: [https://zenodo.org/uploads/14880546]
-
-Each **`.npz`** file is named as **`{protein_id}_geometry.npz`**, where **`{protein_id}`** is the corresponding PDB or SCOPe identifier. Each file contains:
-
-**`dist_matrix`** – Pairwise residue Cβ-Cβ (or Cα for Glycine) distances.
-
-**`phi_vector`**, **`psi_vector`**, **`omega_vector`** – Backbone dihedral angles (ϕ, ψ, ω).
-
-**`start_index`**, **`end_index`** – Indices defining structured regions.
-
-**`resolution_classification`** – Classification based on structure resolution.
-
-**`mask`** – A mask indicating missing or unreliable data.
 ## Usage  
 
 ### 1. Compute Dihedral Angles and Distance Maps  
 First define the Input and Output Directories
 
-Input Directory: Contains **`.cif`** files
+- # Input Directory: Contains **`.cif`** files
 
-Output Directory: Stores **`.npz`** geometry files
+- # Output Directory: Stores **`.npz`** geometry files
 
 Modify these paths in **`geometryCalc.py`**:
 
